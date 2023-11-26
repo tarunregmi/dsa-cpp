@@ -1,6 +1,4 @@
 #include <type_traits>
-#include "../utils/display.cpp"
-
 
 /**
  * @param array array (int || char || float || double) to be sort using Bubble Sort algorithm
@@ -22,25 +20,4 @@ void BubbleSort(T array[], int n) {
 			}
 		}
 	}
-
-	DisplayArray(array, n);
-}
-
-
-int main() {
-	int ia[] = {53, 78, 12, 89, 34, 78};
-	char ca[] = {'I', '\'', 'a', 'm', 'F'};
-	float fa[] = {1.2, 3.5, -5, .6, 9};
-	int n = 0;
-
-	n = sizeof(ia) / sizeof(ia[0]);
-	BubbleSort(ia, n);
-	
-	n = sizeof(ca) / sizeof(ca[0]);
-	BubbleSort(ca, n);
-
-	n = sizeof(fa) / sizeof(fa[0]);
-	BubbleSort(fa, n);
-
-	return 0;
 }
