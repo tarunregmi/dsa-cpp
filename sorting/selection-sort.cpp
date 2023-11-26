@@ -12,15 +12,15 @@ template <typename T, typename = std::enable_if_t<
 >>
 void SelectionSort(T array[], int n) {
 	for (int i = 0; i < n; i++) {
-        int smallestItemIndex = i;
-        for (int j = i+1; j < n; j++) {
-            if (array[j] < array[smallestItemIndex]) smallestItemIndex = j;
-        }
+		int smallestItemIndex = i;
+		for (int j = i+1; j < n; j++) {
+			if (array[j] < array[smallestItemIndex]) smallestItemIndex = j;
+		}
 
-        if (smallestItemIndex != i) {
-            int tmp = array[i];
-            array[i] = array[smallestItemIndex];
-            array[smallestItemIndex] = tmp;
-        }
-    }
+		if (smallestItemIndex != i) {
+			T tmp = array[i];
+			array[i] = array[smallestItemIndex];
+			array[smallestItemIndex] = tmp;
+		}
+	}
 }
