@@ -1,7 +1,7 @@
 #include <type_traits>
 
 /**
- * @param array array (int || char || float || double) to be sort using Bubble Sort algorithm
+ * @param array array (int || char || float || double) to be sort using Selection Sort algorithm
  * @param n lenght of array
  */
 template <typename T, typename = std::enable_if_t<
