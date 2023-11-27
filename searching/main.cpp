@@ -1,5 +1,5 @@
 #include <iostream>
-// import your sorting function here
+#include "./linear-search.cpp" // import your sorting function here
 
 int main() {
 	int unsortedArray[] = {0};
@@ -8,7 +8,7 @@ int main() {
 	int length = sizeof(sortedArray) / sizeof(sortedArray[0]);
 	
 	int target = 18;
-	int result = -1; // call sorting function here
+	int result = LinearSearch(sortedArray, length, target); // call sorting function here
 
 	if (result == -1) std::cout << "not found" << std::endl;
 	else std::cout << target << " is at index: " << result << std::endl;
