@@ -14,7 +14,7 @@ void toh(int n, char src, char help, char dest) {
 int main() {
 	int n = 3;
 
-	toh(n, 'S', 'H', 'D');
+	toh(n, 'S', 'H', 'D'); // Tower of Hanoi
 
 	return 0;
 }
