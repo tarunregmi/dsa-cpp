@@ -14,18 +14,18 @@ template <typename T, typename = std::enable_if_t<
 >>
 int BinarySearch(T array[], int n, T target) {
 	int lb = 0;       // lower bound
-    int ub = n - 1;   // upper bound
-    int mp;           // mid point
-    T mv;             // mid value
+	int ub = n - 1;   // upper bound
+	int mp;           // mid point
+	T mv;             // mid value
 
 	while (lb <= ub) {
-        mp = lb + (ub-lb)/2;
-        mv = array[mp];
+		mp = lb + (ub-lb)/2;
+		mv = array[mp];
 
-        if (target == mv) return mp;
-        else if (target < mv) ub = mp - 1;
-        else lb = mp + 1;
-    }
+		if (target == mv) return mp;
+		else if (target < mv) ub = mp - 1;
+		else lb = mp + 1;
+	}
 
-    return -1; // if target not found
+	return -1; // if target not found
 }
